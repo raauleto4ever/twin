@@ -1,0 +1,264 @@
+
+<div class="page">
+  <header class="topbar">
+    <span>twin >|< </span>
+    <span>hecho con cariño </span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">un pequeño detalle para ti</p>
+        <h1>twin<span class="dot">.</span></h1>
+        <h2>Para los días buenos y los que no lo son tanto.</h2>
+        <p class="intro">Algunas canciones para los días ruidosos, los tranquilos y todo lo que hay en medio. No hace falta encontrar las palabras correctas. Ponle play cuando quieras.</p>
+        <a class="explore" href="#playlist">escucha un poquito <span>↓</span></a>
+      </div>
+      <div class="image-caption">donde sea que te encuentre el día</div>
+    </section>
+
+    <section id="playlist" class="music-section">
+      <div class="section-label">01 — las canciones</div>
+      <div class="music-content">
+        <div class="music-heading">
+          <p class="eyebrow">cuando quieras</p>
+          <h2>una playlist<br><em>para ti.</em></h2>
+          <p>Una pequeña colección, elegida con cariño.</p>
+        </div>
+
+        <div class="player">
+          <iframe
+            src="https://open.spotify.com/embed/playlist/6dhfyNxQdTj8KzZEZdnYZE?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+          <a class="spotify-link" target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/playlist/6dhfyNxQdTj8KzZEZdnYZE">
+            Abrir en Spotify <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reminder">
+      <p class="section-label">02 —  un recordatorio</p>
+      <span class="little-star"></span>
+      <h2>siempre<span>.</span></h2>
+      <p>Para los días en los que todo se siente sencillo, y también para los que no. No tienes que resolverlo todo de una sola vez.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>twin.</span>
+    <span>creativo: raauleto4ever</span>
+  </footer>
+</div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: #071323;
+    color: #f2f3f5;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  .topbar {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 6%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    letter-spacing: .025em;
+    color: #e0e7ef;
+  }
+  .hero {
+    min-height: 820px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 100px 12%;
+    background:
+  linear-gradient(90deg, rgba(3,11,25,.88) 0%, rgba(4,15,30,.48) 48%, rgba(4,13,27,.08) 100%),
+  url('https://images.unsplash.com/photo-1620473564823-8baf403595a9?auto=format&fit=crop&w=2000&q=90')
+  center 55% / cover no-repeat;
+  }
+  .hero-content { max-width: 710px; }
+  .eyebrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #b8cbdf;
+    font-size: 23px;
+    margin: 0 0 26px;
+  }
+  h1 {
+    font-size: clamp(110px, 19vw, 260px);
+    letter-spacing: -.105em;
+    line-height: .85;
+    font-weight: 500;
+    margin: 0 0 44px -14px;
+  }
+  .dot, .reminder h2 span { color: #8bb4e4; }
+  .hero h2 {
+    font-size: clamp(23px, 3vw, 38px);
+    font-weight: 400;
+    letter-spacing: -.055em;
+    max-width: 550px;
+    line-height: 1.2;
+    margin: 0 0 24px;
+  }
+  .intro {
+    max-width: 480px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #c2cfdd;
+    font-weight: 300;
+  }
+  .explore {
+    display: inline-flex;
+    align-items: center;
+    gap: 55px;
+    font-size: 12px;
+    letter-spacing: .06em;
+    padding: 18px 0;
+    margin-top: 35px;
+    border-bottom: 1px solid #8daecb;
+  }
+  .explore span { font-size: 22px; }
+  .image-caption {
+    position: absolute;
+    right: 6%;
+    bottom: 38px;
+    font: italic 18px 'Cormorant Garamond', serif;
+    color: #c1d0e0;
+  }
+  .music-section {
+    padding: 110px 12% 140px;
+    background: #0a192c;
+  }
+  .section-label {
+    font: 15px 'Cormorant Garamond', serif;
+    letter-spacing: .06em;
+    color: #91aac5;
+  }
+  .music-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 9%;
+    margin-top: 80px;
+  }
+  .music-heading h2 {
+    font-weight: 400;
+    font-size: clamp(55px, 6.4vw, 95px);
+    line-height: .98;
+    letter-spacing: -.075em;
+    margin: 0 0 30px;
+  }
+  .music-heading h2 em {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: -.04em;
+    font-weight: 400;
+    color: #a7c7e8;
+  }
+  .music-heading > p:last-child {
+    font-size: 14px;
+    color: #a8b9cb;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+  .player iframe {
+    display: block;
+    border-radius: 12px;
+    border: 0;
+  }
+  .spotify-link {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #627b99;
+    padding: 24px 4px;
+    margin-top: 17px;
+    font-size: 13px;
+    letter-spacing: .02em;
+  }
+  .spotify-link span { font-size: 21px; }
+  .reminder {
+    min-height: 610px;
+    background: #d3deeb;
+    color: #142a43;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 25px;
+  }
+  .reminder .section-label { color: #526d8a; }
+  .little-star {
+    color: #7896b8;
+    font-size: 32px;
+    margin: 40px 0 0;
+  }
+  .reminder h2 {
+    font-weight: 400;
+    font-size: clamp(90px, 13vw, 175px);
+    letter-spacing: -.1em;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .reminder h2 span { color: #7196c0; }
+  .reminder > p:last-child {
+    max-width: 445px;
+    color: #445b74;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 400;
+  }
+  footer {
+    padding: 42px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #95abc4;
+  }
+  footer span:first-child {
+    color: #edf2f7;
+    font-size: 27px;
+    letter-spacing: -.07em;
+  }
+  footer span:last-child {
+    font: italic 17px 'Cormorant Garamond', serif;
+  }
+  @media (max-width: 750px) {
+    .topbar { padding: 25px 7%; font-size: 14px; }
+    .hero {
+      height: auto;
+      min-height: 780px;
+      padding: 130px 9% 115px;
+      background-position: 56% center;
+    }
+    h1 { margin-left: -7px; }
+    .image-caption { right: 9%; bottom: 35px; }
+    .music-section { padding: 80px 8% 100px; }
+    .music-content {
+      grid-template-columns: 1fr;
+      gap: 50px;
+      margin-top: 65px;
+    }
+    .reminder { min-height: 520px; }
+    footer { gap: 25px; padding: 32px 8%; }
+  }
+</style>
